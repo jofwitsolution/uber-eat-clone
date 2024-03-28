@@ -1,3 +1,7 @@
+:root {
+  --gray-100: rgba(0, 0, 0, 0.16);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -189,4 +193,80 @@ a {
 
 .create-section_item a {
   text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.map-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.map-header-wrapper h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.map-header-wrapper a {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 50px;
+  border-top: 1px solid var(--gray-100);
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 40px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-main-right {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-main-right ul {
+  list-style-type: none;
+}
+
+.footer-main-right ul li {
+  margin-bottom: 20px;
+}
+
+.footer-main-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-foot {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+.footer-foot-social-and-links {
+  display: flex;
+  justify-content: space-between;
 }
