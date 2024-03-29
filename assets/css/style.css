@@ -345,11 +345,3 @@ a {
   margin-top: 30px;
   float: right;
 }
-
-/* input[type="checkbox"]:checked + .sidebar {
-  right: 0px;
-}
-
-input[type="checkbox"] {
-  display: none;
-} */
