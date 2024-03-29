@@ -13,6 +13,61 @@ a {
   color: black;
 }
 
+.sidebar-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  visibility: hidden;
+  transition: 0.8s;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  padding: 10px 30px;
+}
+
+.home-hero-bg_nav input[type="checkbox"]:checked + .sidebar-container {
+  visibility: visible;
+  left: 0px;
+}
+
+.home-hero-bg_nav input[type="checkbox"] {
+  display: none;
+}
+
+.auth-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.auth-btn-wrapper a {
+  width: 100%;
+}
+
+.auth-btn-wrapper a button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 13px 0px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+#sidebar-signup-btn {
+  background-color: black;
+  color: white;
+}
+
 .home-hero-bg {
   position: relative;
   background-image: url(/assets/images/hero-bg.jpg);
@@ -270,3 +325,31 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.footer-foot-social-and-links > div:first-child {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-foot-social-and-links > div:last-child {
+  display: flex;
+  gap: 26px;
+}
+
+.footer-foot-social-and-links > div:last-child a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 30px;
+  float: right;
+}
+
+/* input[type="checkbox"]:checked + .sidebar {
+  right: 0px;
+}
+
+input[type="checkbox"] {
+  display: none;
+} */

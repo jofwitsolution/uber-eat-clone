@@ -11,13 +11,36 @@
       <header class="home-hero-bg">
         <!-- Beginning of Home hero nav -->
         <nav class="home-hero-bg_nav">
+          <input type="checkbox" id="checkbox" />
+          <!-- Beginning of sidebar -->
+          <nav class="sidebar-container">
+            <label for="checkbox" style="width: 100%; height: 100%">
+              <div class="sidebar">
+                <label for="checkbox" style="float: right; cursor: pointer">
+                  <img src="/assets/icons/close.svg" width="18" alt="close" />
+                </label>
+                <div class="auth-btn-wrapper">
+                  <a href="#">
+                    <button id="sidebar-signup-btn">Sign up</button>
+                  </a>
+                  <a href="#">
+                    <button id="sidebar-login-btn">Log in</button>
+                  </a>
+                </div>
+              </div>
+            </label>
+          </nav>
+          <!-- End of sidebar -->
+
           <div class="home-hero-bg_nav-left">
-            <img
-              src="/assets/icons/menu.svg"
-              alt="menu"
-              width="22"
-              height="22"
-            />
+            <label for="checkbox">
+              <img
+                src="/assets/icons/menu.svg"
+                alt="menu"
+                width="22"
+                height="22"
+              />
+            </label>
             <span class="logo">
               <span>Uber</span>
               <span>Eats</span>
@@ -190,13 +213,30 @@
       </div>
       <div class="footer-foot">
         <div class="footer-foot-social-and-links">
-          <div>Social</div>
+          <div>
+            <a href="https://www.facebook.com">
+              <img src="/assets/icons/facebook.svg" width="20" alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com">
+              <img
+                src="/assets/icons/instagram.svg"
+                width="20"
+                alt="instagram"
+              />
+            </a>
+            <a href="https://www.twitter.com">
+              <img src="/assets/icons/twitter.svg" width="20" alt="twitter" />
+            </a>
+          </div>
           <div>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms</a>
             <a href="#">Pricing</a>
             <a href="#">Do not sell or share my personal information</a>
           </div>
+        </div>
+        <div class="footer-copyright">
+          <span>&copy; 2024 Uber Technologies Inc.</span>
         </div>
       </div>
     </footer>
