@@ -109,6 +109,12 @@ a {
   padding: 0 40px;
 }
 
+@media screen and (max-width: 756px) {
+  .home-hero-bg_nav {
+    padding: 0 10px;
+  }
+}
+
 .home-hero-bg_nav-left {
   display: flex;
   align-items: center;
@@ -162,6 +168,24 @@ a {
   border: none;
 }
 
+@media screen and (max-width: 756px) {
+  #login-btn span {
+    display: none;
+  }
+
+  #login-btn {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #signup-btn {
+    height: 40px;
+  }
+}
+
 .home-hero-bg_content {
   padding: 0 40px;
 }
@@ -176,6 +200,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
 
   .home-hero-bg_content h1 {
@@ -214,6 +239,12 @@ a {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .search-container {
+    width: 100%;
+  }
+}
+
 .search-container_input-wrapper img {
   position: absolute;
   left: 15px;
@@ -248,9 +279,16 @@ a {
   cursor: pointer;
 }
 
+.search-container_dropdown-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1035px) {
   .search-container_dropdown-wrapper {
     height: 60px;
+    justify-content: space-between;
   }
 
   .search-container button {
@@ -280,6 +318,14 @@ a {
   margin-top: 70px;
   display: flex;
   gap: 20px;
+}
+
+@media screen and (max-width: 756px) {
+  .create-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 10px;
+  }
 }
 
 .create-section_item {
@@ -344,9 +390,17 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 756px) {
+  .footer-main {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
 .footer-main-left {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   justify-content: space-between;
 }
 
@@ -397,4 +451,19 @@ a {
 .footer-copyright {
   margin-top: 30px;
   float: right;
+}
+
+@media screen and (max-width: 756px) {
+  .footer-foot-social-and-links {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-foot-social-and-links > div:last-child {
+    flex-direction: column;
+  }
+
+  .footer-copyright {
+    float: left;
+  }
 }
